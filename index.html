@@ -1,0 +1,494 @@
+<html>
+<head>
+
+<style>
+body 
+{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+}
+    
+#loader
+    {
+        background-color: aliceblue;
+        margin-left: 50%;
+        margin-top: 50%;
+        left:50%;
+        top:50%;
+    }
+    
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+    
+/*navigation bar*/
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav .asd {
+  float: center;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+  font-size: 18px;
+bottom:0;
+line-height:2;
+}
+.asd:hover {
+  color: blue;
+border-width:0 0 2px;
+border-style:solid;
+margin-bottom:0;
+}
+.fa {
+float:right;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+    #img{
+        width:500px;
+        height:300px;
+    }
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: right;
+  }
+
+}
+/*slideshow*/
+* {box-sizing: border-box;}
+.mySlides {display: none;
+width:100%;
+height:100%}
+img {
+vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container 
+    {
+    
+/*background-color: rgba(0,0,0,0.6);*/
+        z-index: -5;
+  width: 100%;
+height:90%;
+  position: relative;
+  display:block;
+/*
+        -webkit-filter: grayscale(100%);  Safari 6.0 - 9.0 
+  filter: grayscale(100%);
+*/
+        
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+/*
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+*/
+
+/*
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+*/
+@media only screen and (max-width: 800px) {
+  .text {font-size: 11px}
+  img{width:100%;}
+}
+.news
+{
+ color:black;
+margin-left: 12%;
+margin-bottom: 5%;
+width:70%;
+display:inline-block;
+}
+.newslink1{height:7%;
+margin-left:10px;
+margin-top:10px;
+margin-bottom:5px;
+line-height:0.5;}
+
+.newslink{
+text-decoration:none;
+margin:0;
+padding:0;
+color:black;
+width:70%;
+display:block;
+}
+.newslink:hover{
+display:inline-block;
+background-color:black;
+color:white;
+width:70%;
+}
+.blinking
+    {
+        text-shadow: 0 0 60px hotpink;
+    animation:blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: white;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}   
+    
+.apinew
+    {
+  background-color: black;
+  width: 550px;
+  border: 7px solid black;
+  padding: 4px;
+  margin-right: 50px;
+          
+}   
+#maindiv{
+  border: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#div1 {
+    background-color: red;
+     
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+#div2 {
+    background-color: red;
+    
+  display: inline-block;
+  animation: marquee2 10s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}  
+    
+
+    
+    
+.button {
+    position: relative;
+    top: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}    
+    
+    
+    
+/*
+    .slideshow-container:after{
+        position: relative;
+        background-color: rgpa(#444,0.9);
+        z-index: -1;
+        
+    }    
+*/
+    
+.box{
+background-image: linear-gradient(to top, #330867 0%, #72afd3 100%);
+  /*  background: url('health.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+*/
+margin-top:30px;
+display:inline-block;
+background-color:#ececec;
+width:100%;
+}
+.box1{text-decoration:none;
+color:black;
+background-color:white;
+display:block;
+height:170px;
+}
+.box1:hover{background-color:black;
+color:#efefef;
+filter: grayscale(100%);
+height:270px;
+}
+
+.box2{
+/*    border: 7px solid black; */
+background-color:white;
+float:left;
+margin-right:3%;
+margin-bottom:6%;
+width:28%;
+height:33%;
+padding:0;
+}
+
+.box3{margin-left:15%;
+margin-right:80px;}
+.container {
+  position:relative;
+  text-align: center;
+}
+
+.cont {
+  border-radius: 5px;
+  /*background-color: #f2f2f2;*/
+  padding: 20px;
+}
+   
+      
+/*    <a href="https://superdevresources.com/css-button-glow-effect//" class="button glow-button" target="_blank">Glow Button</a>*/
+    
+    
+</style>
+</head>
+<body onload ="myfunction()" style="margin:0;">
+    <div id="loader"><img src="lool.gif"></div>
+    <div style="display:none;" id="mydiv" class="animate-bottom">
+    
+    
+<div class="topnav">
+    
+    <a href="home.html" style="float:left; margin:2px;"><img src="Images/logo.jpg" height="60px" width="70px"></a>
+    <a href="drugs A-Z.html" class="button glow-button" style="margin-left:10%;">Drugs A-Z</a>
+    <a href="BMI checker.html" class="button glow-button">BMI CHecker</a>
+    <a href="#"  class="button glow-button">Consult a Doctor</a>
+  
+<a href="https://www.facebook.com/" style="float:right;margin:2px;"><img src="Images/facebook.png"></a>
+<a href="https://twitter.com/" style="float:right;margin:2px;"><img src="Images/twitter.png"></a>
+
+
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Images/pic2.jpg" height="100%" width="100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/i2.jpg" height="100%" width="100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/heheh.jpg" height="100%" width="100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Images/i4.jpg" height="100%" width="100%">
+</div>
+    
+<div class="mySlides fade">
+  <img src="Images/i4.jpg" height="100%" width="100%">
+</div>    
+</div>
+<br>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 4000); 
+}
+</script>
+
+<div style="margin-top:8%; margin-left:5%;">
+<hr style="width:90%; height:10px; margin:0; background-color:black;">
+<h3 >TOP HEALTH AND DRUGS NEWS</h3>
+</div>
+<div style="display:flex;flex-direction:row;">    
+<div class="news">
+<a href="news1.html" target="_blank" class="newslink"><div class="newslink1"><h4>LUNG CANCER</h4>
+<h5 style="color:skyblue;">Prolonged Lung Cancer Screening Boosts Mortality Benefit</h5>
+</div></a>
+<hr style="margin:0; width:70%;">
+<a href="news2.html" target="_blank" class="newslink"><div class="newslink1"><h4>NOT EATING GOOD FOOD</h4>
+<h5 style="color:skyblue; margin-right:10px;">Worse Than Eating Bad Food</h5>
+</div></a>
+<hr style="margin:0; width:70%;">
+<a href="news3.html" target="_blank" class="newslink"><div class="newslink1"><h4>SUGAR LABELING POLICY</h4>
+<h5 style="color:skyblue;">To Pay Sweet Dividends</h5>
+</div></a>
+<hr style="margin:0; width:70%;">
+<a href="news4.html" target="_blank" class="newslink"><div class="newslink1"><h4>KIDNEY FAILURE RISK</h4>
+<h5 style="color:skyblue;">Diabetes Drug 'HOME RUN' Causes Risk</h5>
+</div></a>
+<hr style="margin:0; width:70%;">
+<a href="news5.html" target="_blank" class="newslink"><div class="newslink1"><h4>BMI FOR ASSESSING OBESITY</h4>
+<h5 style="color:skyblue;">Health in Kids</h5>
+</div></a>
+<hr style="margin:0; width:70%;">
+</div>
+<br>
+    <div class="apinew">
+        <span class="blinking"><h1><i><center>LIVE NEWS!</center></i></h1></span>
+
+      <div id="image"></div>
+      <h3 id="title" style="color:white;"></h3>    
+   
+    <div id="maindiv">
+  <div id="div1">
+    &nbsp; BREAKING NEWS! &nbsp;&nbsp; BREAKING NEWS! &nbsp;&nbsp; BREAKING NEWS!
+  </div>
+  <div id="div2">
+     &nbsp;&nbsp;BREAKING NEWS! &nbsp;&nbsp; BREAKING NEWS! &nbsp;&nbsp; BREAKING NEWS!
+  </div>
+</div>
+</div>
+   </div>  
+    
+    
+<div class="box">
+<hr style="width:90%; height:10px; background-color:black; margin-top:1.5%; margin-left:80px;">
+<h2 style="margin-left:80px;">FEATURED CONTENT</h2>
+<div class="box3">
+<div class="box2"><a href="#" class="box1">
+<img src="Images/sleep.jpg" height="80%" width="100%">
+<h4 style="color:skyblue; margin-left:10px;">Sleep Disorders</h4>
+<h5 style="margin-left:10px;">A Visual Guide to Sleeping Disorders</h5>
+</a></div>
+<div class="box2"><a href="#" class="box1">
+<img src="Images/allergy.jpg" height="80%" width="100%">
+<h4 style="color:skyblue; margin-left:10px;">Allergy</h4>
+<h5 style="margin-left:10px; margin-bottom:10px;">10 Signs Yoiur Allergies Are Out of Control</h5>
+</a></div>
+<div class="box2"><a href="#" class="box1">
+<img src="Images/skin.jpg" height="80%" width="100%">
+<h4 style="color:skyblue; margin-left:10px;">Skin Conditions Gallery</h4>
+<h5 style="margin-left:10px;">An Image Collection of Common Skin Problems</h5>
+</a></div>
+<div class="box2"><a href="#" class="box1">
+<img src="Images/dental.jpg" height="80%" width="100%">
+<h4 style="color:skyblue; margin-left:10px;">Dental Health</h4>
+<h5 style="margin-left:10px;">19 Habits That Wreck Your Teeth</h5>
+</a></div>
+<div class="box2"><a href="#" class="box1">
+<img src="Images/diabetes.jpg" height="80%" width="100%">
+<h4 style="color:skyblue; margin-left:10px;">Diabetes and Exercise</h4>
+<h5 style="margin-left:10px;">Weight Training for Diabetes and Blood Sugar Contol</h5>
+</a></div>
+<div class="box2"><a href="#" class="box1">
+<img src="Images/migrane.jpg" height="80%" width="100%">
+<h4 style="color:skyblue; margin-left:10px;">Migrane Headaches</h4>
+<h5 style="margin-left:10px;">Symptoms, Triggers and Treatment</h5>
+</a></div>
+</div>
+</div>
+<br>
+<br>
+        
+        
+<script>
+ var myvar;
+    function myfunction()
+    {
+        myvar=setTimeout(showPage,1000);
+    }
+    
+    function showPage()
+    {
+    document.getElementById("loader").style.display="none";
+       document.getElementById("mydiv").style.display="block";  
+    }
+    
+
+    </script>
+    
+    
+    
+<script src="newsapi.js"></script>
+        
+        
+        
+    </body>
+</html>
