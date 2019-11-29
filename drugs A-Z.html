@@ -1,0 +1,488 @@
+<html>
+<head>
+<meta charset="utf-8"/>    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+<style>
+
+{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+}
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav .asd {
+  float: center;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+  font-size: 18px;
+bottom:0;
+line-height:2;
+}
+.asd:hover {
+  color: darkred;
+border-width:0 0 2px;
+border-style:solid;
+margin-bottom:0;
+}
+
+
+.head
+{
+
+background-image: url('Images/pilll.jpg');
+background-size:cover;
+margin-top:0;
+height:auto;
+display:inline-block;
+width:100%;
+}
+
+
+body{
+  background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid black;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid black;
+  background: black;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top:30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    
+    
+    
+    
+.content{
+
+margin-right:20%;
+margin-left:20%;
+}
+.az ul{padding:0;
+display:inline-block;
+}
+.az ul li{padding:0;
+margin:6px;
+}
+.az li {
+display: inline-block;
+    padding: 100px;
+    color: white;
+    font-size: 25px;
+    font-weight: 500px;
+    line-height: 60px;
+    border-radius: 3px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: black;
+}
+.az li a{text-decoration:none;
+    }
+
+ul{list-style-type:none;
+padding-left:10%;
+}
+ul li{padding:0;
+margin:6px;}
+li{   
+    padding: 100px;
+    color: #3399ff;
+    font-size: 25px;
+    font-weight: 500px;
+    line-height: 60px;
+    border-radius: 3px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background: #f5f5f5;
+    }
+    
+.box
+    {
+    float: right;
+  background-color: white;
+  width: 270px;
+  height: 340px;
+  border: 7px solid black;
+  padding: 1px;
+  margin-right: 10px;
+        
+    }
+
+</style>
+    <body>
+<div class="topnav">
+<a href="Index.html" style="float:left; margin:2px;"><img src="Images/logo.jpg" height="60px" width="70px"></a>
+    <a href="drugs A-Z.html"  class="asd" style="margin-left:10%;">Drugs A-Z</a>
+  <a href="BMI checker.html"   class="asd">BMI Checker</a>
+  
+ <a href="#" style="float:right;margin:2px;"><img src="Images/facebook.png"></a>
+<a href="#" style="float:right;margin:2px;"><img src="Images/twitter.png"></a>
+
+</div>
+
+<div class="head">
+<p style="font-size:60px; text-align:center; margin-top:1%0; color:antiquewhite;">DRUGS A-Z</p>
+    
+    
+    <div class="wrap">
+   <div class="search">
+      <input type="text" id="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" id="searchButton">
+        <i class="fas fa-search"></i>
+     </button>
+   </div>
+</div>
+    
+</div>
+<div  class="box">
+    <ul id="display-box">
+    </ul>
+    </div>   
+<div class="content">
+<div class="az">
+<ul type="none">
+<li><a href="#A">A</a></li>
+<li><a href="#B">B</a></li>
+<li><a href="#C">C</a></li>
+<li><a href="#D">D</a></li>
+<li><a href="#E">E</a></li>
+<li><a href="#F">F</a></li>
+<li><a href="#G">G</a></li>
+<li><a href="#H">H</a></li>
+<li><a href="#I">I</a></li>
+<li><a href="#J">J</a></li>
+<li><a href="#K">K</a></li>
+<li><a href="#L">L</a></li>
+<li><a href="#M">M</a></li>
+<li><a href="#N">N</a></li>
+<li><a href="#O">O</a></li>
+<li><a href="#P">P</a></li>
+<li><a href="#Q">Q</a></li>
+<li><a href="#R">R</a></li>
+<li><a href="#S">S</a></li>
+<li><a href="#T">T</a></li>
+<li><a href="#U">U</a></li>
+<li><a href="#V">V</a></li>
+<li><a href="#W">W</a></li>
+<li><a href="#X">X</a></li>
+<li><a href="#Y">Y</a></li>
+<li><a href="#Z">z</a></li>    
+    
+
+</ul>
+</div>
+ 
+   
+    
+<br><br>
+<div id="A"></div>
+<h1>A</h1>
+<ul>
+<li>Aspirin</li>
+<li>Amoxicillin</li>
+<li>Azathioprine</li>
+<li>Azithromycin</li>
+<li>Allegra</li>
+</ul>
+<br><br>
+<div id="B"></div>
+<h1>B</h1>
+<ul>
+<li>Bentyl</li>
+<li>Bisoprolol</li>
+<li>Buspar</li>
+<li>Benztropine</li>
+<li>Bactrim</li>
+</ul>
+<br><br>
+<div id="C"></div>
+<h1>C</h1>
+<ul>
+<li>Cetizine</li>
+<li>Cipro</li>
+<li>Cefuroxime</li>
+<li>Combiflem</li>
+<li>Captopril</li>
+</ul>
+<br><br>
+<div id="D"></div>
+<h1>D</h1>
+<ul>
+<li>Dexilant</li>
+<li>Dicyclomine</li>
+<li>Ditropan</li>
+<li>Dulcolax</li>
+<li>Dulera</li>
+</ul>
+<br><br>
+<div id="E"></div>
+<h1>E</h1>
+<ul>
+<li>Essexor</li>
+<li>Evista</li>
+<li>EpiPen</li>
+<li>Epinephrine</li>
+<li>Elidel</li>
+</ul>
+<br><br>
+<div id="F"></div>
+<h1>F</h1>
+<ul>
+<li>Flucold</li>
+<li>Fish oil</li>
+<li>Folic Acid</li>
+<li>Forteo</li>
+<li>Femara</li>
+</ul>
+<br><br>
+<div id="G"></div>
+<h1>G</h1>
+<ul>
+<li>Gas-X</li>
+<li>Glucotrol</li>
+<li>GlycoLax</li>
+<li>Granix</li>
+<li>Glucagon</li>
+</ul>
+<br><br>
+<div id="H"></div>
+<h1>H</h1>
+<ul>
+<li>Humira</li>
+<li>Heparin Sodium</li>
+<li>Hydrocodone</li>
+<li>Hytrin</li>
+<li>Haloperidol</li>
+</ul>
+<br><br>
+<div id="I"></div>
+<h1>I</h1>
+<ul>
+<li>Insulin</li>
+<li>Imodium</li>
+<li>Imuran</li>
+<li>Isotretinoin</li>
+<li>Invokana</li>
+</ul>
+<br><br>
+<div id="J"></div>
+<h1>J</h1>
+<ul>
+<li>Jalyn</li>
+<li>Jantoven</li>
+<li>Jakafi</li>
+<li>Januvia</li>
+<li>Junel</li>
+</ul>
+<br><br>
+<div id="K"></div>
+<h1>K</h1>
+<ul>
+<li>K-Dur</li>
+<li>Kaolin</li>
+<li>Ketoprofen</li>
+<li>Kristalose</li>
+<li>Ketorolac</li>
+</ul>
+<br><br>
+<div id="L"></div>
+<h1>L</h1>
+<ul>
+<li>Lactulose</li>
+<li>Latuda</li>
+<li>Lipitor</li>
+<li>Levemir</li>
+<li>Levocitrizine</li>
+</ul>
+<br><br>
+<div id="M"></div>
+<h1>M</h1>
+<ul>
+<li>Meclizine</li>
+<li>Methadone</li>
+<li>Methotrexate</li>
+<li>Midazolam</li>
+<li>Mobic</li>
+</ul>
+<br><br>
+<div id="N"></div>
+<h1>N</h1>
+<ul>
+<li>Nadolol</li>
+<li>Neosporin</li>
+<li>Norflex</li>
+<li>Nicotine</li>
+<li>Neurontin</li>
+</ul>
+<br><br>
+<div id="0"></div>
+<h1>O</h1>
+<ul>
+<li>Ofloxacin</li>
+<li>Onfi</li>
+<li>Oxygen</li>
+<li>Oxazepam</li>
+<li>Orlistat</li>
+</ul>
+<br><br>
+<div id="P"></div>
+<h1>P</h1>
+<ul>
+<li>Paracetamol</li>
+<li>Prednisolone</li>
+<li>Prolia</li>
+<li>Propranolol</li>
+<li>Protonix</li>
+</ul>
+<br><br>
+<div id="Q"></div>
+<h1>Q</h1>
+<ul>
+<li>Quinidine</li>
+<li>Quinapril Hydrochloride</li>
+<li>Qualaquin</li>
+<li>Qvar Redihaler</li>
+<li>Quelicin</li>
+</ul>
+<br><br>
+<div id="R"></div>
+<h1>R</h1>
+<ul>
+<li>Ranolazine</li>
+<li>Relpax</li>
+<li>Rexulti</li>
+<li>Rivaroxaban</li>
+<li>Rocephin</li>
+</ul>
+<br><br>
+<div id="S"></div>
+<h1>S</h1>
+<ul>
+<li>Septra</li>
+<li>Simvastatin</li>
+<li>Sumo</li>
+<li>Shingrix</li>
+<li>Sulfasalazine</li>
+</ul>
+<br><br>
+<div id="T"></div>
+<h1>T</h1>
+<ul>
+<li>Tamsulosin</li>
+<li>Trazodone</li>
+<li>Trileptal</li>
+<li>Trintellix</li>
+<li>Toradol</li>
+</ul>
+<br><br>
+<div id="U"></div>
+<h1>U</h1>
+<ul>
+<li>Uceris</li>
+<li>Unisom</li>
+<li>Urea Cream</li>
+<li>Urofollitropin</li>
+<li>Uroxatral</li>
+</ul>
+<br><br>
+<div id="V"></div>
+<h1>V</h1>
+<ul>
+<li>Victoza</li>
+<li>Vitamin C</li>
+<li>Vivitrol</li>
+<li>Vitamin D</li>
+<li>Veltassa</li>
+</ul>
+<br><br>
+<div id="W"></div>
+<h1>W</h1>
+<ul>
+<li>Westcort</li>
+<li>Westhroid</li>
+<li>Welchol</li>
+<li>Warfarin</li>
+<li>Wymzya FE</li>
+</ul>
+<br><br>
+<div id="X"></div>
+<h1>X</h1>
+<ul>
+<li>Xadago</li>
+<li>Xospata</li>
+<li>Xulane</li>
+<li>Xyzal</li>
+<li>Xyosted</li>
+</ul>
+<br><br>
+<div id="Y"></div>
+<h1>Y</h1>
+<ul>
+<li>Y-90 Zevalin</li>
+<li>Yasmin</li>
+<li>Yucca</li>
+<li>Yuvafem</li>
+<li>Yupelri</li>
+</ul>
+<br><br>
+<div id="Z"></div>
+<h1>Z</h1>
+<ul>
+<li>Zinc</li>
+<li>Zanaflex</li>
+<li>Zomig</li>
+<li>Zyban</li>
+<li>Zolpidem</li>
+</ul>
+<br><br>
+</div>
+
+</body>
+    <script src="drug.js">
+    
+    </script>
+</html>

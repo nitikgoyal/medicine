@@ -1,0 +1,235 @@
+<html>
+<head>
+<style>
+body 
+{
+    background-image: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%);
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+.topnav .asd {
+  float: center;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+  font-size: 18px;
+bottom:0;
+line-height:2;
+}
+.asd:hover {
+  color: blue;
+border-width:0 0 2px;
+border-style:solid;
+margin-bottom:0;
+}
+
+.head
+{
+
+background-image: url('Images/bmi.jpg');
+margin-top:0;
+height:auto;
+display:inline-block;
+width:100%;
+}
+.content{
+
+margin-right:20%;
+margin-left:20%;
+}
+
+input[type=number]{
+	margin-top:10px;
+	width:90%;
+	line-height:2.4;
+	border:solid 1px grey;
+	border-radius:4px;
+	box-sizing:border-box;
+	padding-left: 10px;
+} 
+
+.footer
+{
+position:absolute;
+width:100%;
+height:100px;
+background-color:tomato;
+text-align:center;
+margin-bottom: 0;
+bottom:0;
+left:0;
+}
+
+    #output{
+      display: none;
+      box-sizing: border-box;
+      border: 3px solid grey;
+      height: 200px;
+	text-align:center;
+      padding : 15px 10px 0 15px;
+      //background-color: yellow;
+    }
+
+
+#class3{
+      margin-bottom: 10px;
+    }
+#bttn, #back{
+      margin-top: 5px;
+      margin-left: 5px;
+      width: 70px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    #bttn, #back{
+      background-color: #ED1F24;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      outline: none;
+      width: 110px;
+      height: 40px;
+    }
+
+    #bttn:hover, #back:hover{
+      background-color: #00a950;
+    }
+.row{margin-top:10%;}
+.row #leftcol{
+	line-height: 2;
+	box-sizing: border-box;
+	padding-top: 25px;
+}
+.column 
+    {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 350px;
+    }
+    
+    .image
+    {
+        position: absolute;
+        top: 45%;
+        left: 73%;
+        width: 50%;
+       padding: 10px;
+       height: 350px;
+    }
+</style>
+</head>
+<body>
+<div class="topnav">
+<a href="Index.html" style="float:left; margin:2px;"><img src="Images/logo.jpg" height="60px" width="70px"></a>
+    <a href="drugs A-Z.html"  class="asd" style="margin-left:10%;">Drugs A-Z</a>
+  <a href="BMI checker.html"   class="asd">BMI Checker</a>
+
+ <a href="#" style="float:right;margin:2px;"><img src="Images/facebook.png"></a>
+<a href="#" style="float:right;margin:2px;"><img src="Images/twitter.png"></a>
+
+</div>
+
+<div class="head">
+<p style="font-size:60px; text-align:center; margin-top:1%0; color:white;">BMI CHECKER</p>
+</div>
+<div class="content">
+<div class="row">
+  <div class="column">
+<div id="form">
+        <form>
+        <label>Height:</label><br>
+        <input type="number" name="hght"  required placeholder="meters" id="mtr">
+<br><br>
+        <label>Weight:</label><br>
+        <input type="number" name="kgs"  required id="kg" placeholder="kilogram(s)">
+<br><br>        
+<input type="button"  onclick="bmi()" id="bttn" value="Calculate">
+        <input type="reset" value="Reset" id="bttn">
+  </form>
+</div>
+  <div id="output">
+
+    <p id="class1" class="info">
+    </p>
+
+    <p id="class2" class="info">
+    </p>
+
+    <p id="class3" class="info">
+    </p>
+
+    <input type="button" value="Back" id="back">
+  </div>
+
+
+  </div>
+<div class="column" id="leftcol">
+    Please input your height and weight to<br> know your BMI.Body Mass Index(or BMI)<br>is calculated as
+    your weight(in kilograms)<br> divided by the square of your<br> height(in metres) or BMI = Kg/M2.
+</div>
+    
+<div class="image" id="bmi">
+    
+    <img src="Images/BP.jpg">
+    </div>
+</div>
+</div>
+
+<script>
+
+
+function bmi(){
+
+      document.getElementById("form").style.display="none";
+      document.getElementById("output").style.display="block";
+
+      var a,b;
+      a=Number(document.getElementById("mtr").value);
+      b=Number(document.getElementById("kg").value);
+      var c=a*a;
+      var res=(b/c);
+
+      document.getElementById("class1").innerHTML=("Height: "+a+" metres");
+      document.getElementById("class2").innerHTML=("Weight: "+b+" kilograms");
+      if(res<18.5)
+      {
+        document.getElementById("class3").innerHTML=("Your BMI is "+res.toPrecision(3)+", indicating you are Underweight.");
+      }
+      else if(res>=18.5 && res<=25)
+      {
+        document.getElementById("class3").innerHTML=("Your BMI is "+res.toPrecision(3)+", indicating you are Normal.");
+      }
+      else if(res>25 && res<=30)
+      {
+        document.getElementById("class3").innerHTML=("Your BMI is "+res.toPrecision(3)+", indicating you are Overweight.");
+      }
+      else if(res>30)
+      {
+        document.getElementById("class3").innerHTML=("Your BMI is "+res.toPrecision(3)+", indicating you are Obese.");
+      }
+
+    }
+
+    var back=document.getElementById("back");
+    back.onclick=function()
+    {
+      document.getElementById("output").style.display="none";
+      document.getElementById("form").style.display="block";
+    }
+</script>
+
+</body>
+</html>

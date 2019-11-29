@@ -1,0 +1,244 @@
+{
+    "drugs":
+    [
+        
+        {
+            "id" : "A",
+            "name": ["Aspirin",
+                  "Amoxicillin",
+                  "Azathioprine",
+                  "Azithromycin",
+                  "Allegra"]
+        },
+        
+       {
+        
+             "id" : "B",
+            "name": ["Bentyl",
+                   "Bisoprolol",
+                    "Buspar",
+                    "Benztropine",
+                    "Bactrim"]
+        },
+        {
+        
+             "id" : "C",
+            "name": ["Cetizine",
+                      "Cipro",
+                      "Cefuroxime",
+                      "Combiflem",
+                      "Captopril"]
+        },
+        {
+        
+             "id" : "D",
+            "name": ["Dexilant",
+                     "Dicyclomine",
+                     "Ditropan",
+                     "Dulcolax",
+                      "Dulera"]
+        },
+        {
+        
+             "id" : "E",
+            "name": ["Essexor",
+                      "Evista",
+                      "EpiPen",
+                      "Epinephrine",
+                     " Elidel"]
+        },
+        {
+        
+             "id" : "F",
+            "name": ["Flucold",
+                  "Fish oil",
+                  "Folic Acid",
+                  "Forteo",
+                  "Femara"]
+        },
+        
+        
+            
+        {
+        
+             "id" : "G",
+            "name": ["Gas-X",
+                  "Glucotrol",
+                  "GlycoLax",
+                  "GlycoLax",
+                  "Glucagon"]
+        },
+        {
+        
+               "id" : "H",
+               "name": ["Humira",
+                  "Heparin Sodium",
+                  "Hydrocodone",
+                  "Hytrin",
+                  "Haloperidol"]
+        },
+        {
+        
+             "id" : "I",
+            "name": ["Insulin",
+                  "Imodium",
+                  "Imuran",
+                  "isotretinoin",
+                  "Invokana"]
+        },
+        {
+        
+             "id" : "J",
+            "name": ["Jalyn",
+                  "Jantoven",
+                  "Jakafi",
+                  "Januvia",
+                  "Junel"]
+        },
+        {
+        
+             "id" : "K",
+            "name": ["K-Dur",
+                  "Kaolin",
+                  "Ketoprofen",
+                  "Kristalose",
+                  "Ketorolac"]
+        },
+        {
+        
+             "id" : "L",
+            "name": ["Lactulose",
+                  "Latuda",
+                  "Lipitor",
+                  "Levemir",
+                  "Levocitrizine"]
+        },
+        {
+        
+             "id" : "M",
+            "name": ["Meclizine",
+                  "Methadone",
+                  "Methotrexate",
+                  "Midazolam",
+                  "Mobic"]
+        },
+        {
+        
+             "id" : "N",
+            "name": ["Nadolol",
+                  "Neosporin",
+                  "Norflex",
+                  "Nicotine",
+                  "Neurontin"]
+        },
+        {
+        
+             "id" : "O",
+            "name": ["Ofloxacin",
+                  "Onfi",
+                  "Oxygen",
+                  "Oxazepam",
+                  "Orlistat"]
+        },
+        {
+        
+             "id" : "P",
+            "name": ["Paracetamol",
+                  "Prednisolone",
+                  "Prolia",
+                  "Propranolol",
+                  "Protonix"]
+        },
+        {
+        
+             "id" : "Q",
+            "name": ["Quinidine",
+                  "Quinapril Hydrochloride",
+                  "Qualaquin",
+                  "Qvar Redihaler",
+                  "Quelicin"]
+        },
+        {
+        
+             "id" : "R",
+            "name": ["Ranolazine",
+                  "Relpax",
+                  "Rexulti",
+                  "Rivaroxaban",
+                  "Rocephin"]
+        },
+        {
+        
+             "id" : "S",
+            "name": ["Septra",
+                  "Simvastatin",
+                  "Sumo",
+                  "Shingrix",
+                  "Sulfasalazine"]
+        },
+        {
+        
+             "id" : "T",
+            "name": ["Tamsulosin",
+                  "Trazodone",
+                  "Trileptal",
+                  "Trintellix",
+                  "Toradol"]
+        },
+        {
+        
+             "id" : "U",
+            "name": ["Uceris",
+                  "Unisom",
+                  "Urea Cream",
+                  "Urofollitropin",
+                  "Uroxatral"]
+        },
+        {
+        
+             "id" : "V",
+            "name": ["Victoza",
+                  "Vitamin C",
+                  "Vivitrol",
+                  "Vitamin D",
+                  "Veltassa"]
+        },
+        {
+        
+             "id" : "W",
+            "name": ["Westcort",
+                  "Westhroid",
+                  "Welchol",
+                  "Warfarin",
+                  "Wymzya FE"]
+        },
+        {
+        
+             "id" : "X",
+            "name": ["Xadago",
+                  "Xospata",
+                  "Xulane",
+                  "Xyzal",
+                  "Xyosted"]
+        },
+        {
+        
+             "id" : "Y",
+            "name": ["Y-90 Zevalin",
+                  "Yasmin",
+                  "Yucca",
+                  "Yuvafem",
+                  "Yupelri"]
+        },
+        {
+        
+             "id" : "Z",
+            "name": ["Zinc",
+                  "Zanaflex",
+                  "Zomig",
+                  "Zyban",
+                  "Zolpidem"]
+        }
+        
+    ]
+}
